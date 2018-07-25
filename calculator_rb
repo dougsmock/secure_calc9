@@ -1,0 +1,2 @@
+user_arr = ["admin", "student", "teacher"]
+password_arr = ["password1", "password2", "password3"]

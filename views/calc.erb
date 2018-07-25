@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+
+.entry {
+  background-color: black;
+  padding: 5px 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  width: 350px;
+  background-color: red;
+  padding: 20px 0px 0px 0px;
+  border-width: 10px;
+  border-radius: 10px;
+  border-style: outset;
+  border-color: gray;
+}
+
+.button {
+  background-color: red;
+	border: 3px;
+  color: white;
+  font-family: Impact, Helvetica, sans-serif;
+  padding: 10px 0px 0px 0px;
+  margin-bottom: -22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.answer {
+  font-family: Impact, Helvetica, sans-serif;
+  padding: 0px;
+  text-align: center;
+  display: inline-block;
+  font-size: 13px;
+}
+
+</style>
+</head>
+
+<div class="container">
+<form method="post" action="calculate">
+  <input type="text" class="entry" name="val_1" placeholder="First Number" required autofocus>
+  <input type="text" class="entry" name="val_2" placeholder="Second Number" required>
+  <br><br>
+
+  <label for="add" style="font-family: Impact;">Add</label>
+  <input type="radio" name="operation" id="add" value="add">
+
+  <label for="subtract" style="font-family: Impact;">Subtract</label>
+  <input type="radio" name="operation" id="subtract" value="subtract">
+
+  <label for="multiply" style="font-family: Impact;">Multiply</label>
+  <input type="radio" name="operation" id="multiply" value="multiply">
+
+  <label for="divide" style="font-family: Impact;">Divide</label>
+  <input type="radio" name="operation" id="divide" value="divide">
+
+  <br>
+  <button class="button">Submit</button>
+</form>
+
+<div class="answer">
+		<h2>
+			<% unless val_1 == ""%>
+
+			<% if result == false%>
+				"Cannot divide by zero!"
+			<% else%>
+				<%= val_1%> <%= operation%> <%= val_2%> = <%= result%>
+			<% end%>
+			<% end%>
+		</h2>
+</div>
+</div>
+
+
+</html>

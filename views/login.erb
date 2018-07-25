@@ -1,0 +1,46 @@
+<body>
+<head>
+<style>
+.entry {
+  background-color: black;
+  padding: 5px 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.container {
+  width: 300px;
+  background-color: red;
+  padding: 20px 0px 0px 10px;
+  border-width: 10px;
+  border-radius: 10px;
+  border-style: outset;
+  border-color: gray;
+}
+
+.button {
+  background-color: red;
+	border: 3px;
+  color: white;
+  font-family: Impact, Helvetica, sans-serif;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 35px;
+}
+
+</style>
+</head>
+
+<div class="container">
+<form method="post" action="log">
+  <input type="text" class="entry" name='user_name' placeholder="User name" required>
+  <br><br>
+  <input type="password" class="entry" name="pass" placeholder="Password" required>
+  <br><br>
+  <input type="submit" class="button" value="Submit">
+</form>
+</div>
+
+</html>

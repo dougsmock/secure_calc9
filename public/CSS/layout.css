@@ -1,0 +1,26 @@
+.header {
+	font-size: 25px;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: bold;
+  color: royalblue;
+}
+
+.entry {
+  background-color: black;
+  padding: 5px 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.button {
+  background-color: #4CAF50;
+	border: none;
+  color: white;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-strength: light;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+}
